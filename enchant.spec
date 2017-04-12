@@ -4,7 +4,7 @@
 #
 Name     : enchant
 Version  : 1.6.1
-Release  : 1
+Release  : 2
 URL      : https://github.com/AbiWord/enchant/releases/download/enchant-1-6-1/enchant-1.6.1.tar.gz
 Source0  : https://github.com/AbiWord/enchant/releases/download/enchant-1-6-1/enchant-1.6.1.tar.gz
 Summary  : An Enchanting Spell Checking Library
@@ -14,6 +14,7 @@ Requires: enchant-bin
 Requires: enchant-lib
 Requires: enchant-data
 Requires: enchant-doc
+BuildRequires : aspell-dev
 BuildRequires : pkgconfig(dbus-glib-1)
 BuildRequires : pkgconfig(glib-2.0)
 BuildRequires : pkgconfig(hunspell)
@@ -72,7 +73,7 @@ lib components for the enchant package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1491847021
+export SOURCE_DATE_EPOCH=1492014582
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -84,7 +85,7 @@ export no_proxy=localhost
 make VERBOSE=1 V=1 %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1491847021
+export SOURCE_DATE_EPOCH=1492014582
 rm -rf %{buildroot}
 %make_install
 
@@ -114,6 +115,7 @@ rm -rf %{buildroot}
 
 %files lib
 %defattr(-,root,root,-)
+/usr/lib64/enchant/libenchant_aspell.so
 /usr/lib64/enchant/libenchant_ispell.so
 /usr/lib64/enchant/libenchant_myspell.so
 /usr/lib64/enchant/libenchant_zemberek.so
