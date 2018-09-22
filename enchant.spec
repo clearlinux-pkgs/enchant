@@ -4,7 +4,7 @@
 #
 Name     : enchant
 Version  : 2.2.3
-Release  : 6
+Release  : 7
 URL      : https://github.com/AbiWord/enchant/releases/download/v2.2.3/enchant-2.2.3.tar.gz
 Source0  : https://github.com/AbiWord/enchant/releases/download/v2.2.3/enchant-2.2.3.tar.gz
 Summary  : A spell checking library
@@ -16,6 +16,7 @@ Requires: enchant-license
 Requires: enchant-data
 Requires: enchant-man
 BuildRequires : aspell-dev
+BuildRequires : hunspell-dev
 BuildRequires : pkgconfig(glib-2.0)
 BuildRequires : pkgconfig(gmodule-2.0)
 BuildRequires : valgrind
@@ -92,7 +93,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1537645272
+export SOURCE_DATE_EPOCH=1537645467
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -104,7 +105,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1537645272
+export SOURCE_DATE_EPOCH=1537645467
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/enchant
 cp COPYING.LIB %{buildroot}/usr/share/doc/enchant/COPYING.LIB
@@ -133,6 +134,7 @@ cp COPYING.LIB %{buildroot}/usr/share/doc/enchant/COPYING.LIB
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/enchant-2/enchant_aspell.so
+/usr/lib64/enchant-2/enchant_hunspell.so
 /usr/lib64/libenchant-2.so.2
 /usr/lib64/libenchant-2.so.2.2.3
 
