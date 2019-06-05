@@ -4,7 +4,7 @@
 #
 Name     : enchant
 Version  : 2.2.3
-Release  : 8
+Release  : 9
 URL      : https://github.com/AbiWord/enchant/releases/download/v2.2.3/enchant-2.2.3.tar.gz
 Source0  : https://github.com/AbiWord/enchant/releases/download/v2.2.3/enchant-2.2.3.tar.gz
 Summary  : A spell checking library
