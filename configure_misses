@@ -6,6 +6,7 @@ Configure miss: whether we are using the GNU Objective C++ compiler
 Configure miss: whether g++ accepts -g
 Configure miss: whether to activate relocatable installation
 Configure miss: whether -Wno-missing-field-initializers is needed
+Configure miss: whether -Wno-missing-field-initializers is needed
 Configure miss: whether C++ compiler handles -Werror -Wunknown-warning-option
 Configure miss: hspell.h usability
 Configure miss: hspell.h presence
