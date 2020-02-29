@@ -9,6 +9,7 @@ Configure miss: whether to activate relocatable installation
 Configure miss: whether -Wno-missing-field-initializers is needed
 Configure miss: whether -Wno-missing-field-initializers is needed
 Configure miss: whether C++ compiler handles -Werror -Wunknown-warning-option
+Configure miss: NUSPELL
 Configure miss: hspell.h usability
 Configure miss: hspell.h presence
 Configure miss: hspell.h
