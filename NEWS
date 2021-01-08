@@ -1,3 +1,62 @@
+2.2.15 (December 22, 2020)
+--------------------------
+
+Specify that nuspell >= 4.1.0 is required.
+
+Fix some space leaks in the tests.
+
+
+2.2.14 (December 10, 2020)
+--------------------------
+
+Improve installation instructions: in particular, add a note about where to
+find them to README.
+
+The nuspell backend is updated for newer versions.
+
+
+2.2.13 (November 2, 2020)
+-------------------------
+
+Make the enchant program output its version to standard output, not standard
+error. This may help some programs that use this output.
+
+
+2.2.12 (October 15, 2020)
+-------------------------
+
+Fix a bug in the Voikko and Zemberek back-ends that could cause spell
+checking and suggestion to fail. (For programmers: enchant_dict_check and
+enchant_dict_suggest allow counted strings, but those two backends were
+assuming the strings were NUL-terminated.)
+
+
+2.2.11 (September 7, 2020)
+--------------------------
+
+Make enchant silently ignore -B flag, for better Emacs compatibility.
+
+Make enchant_broker_list_dicts sort the tags, so that enchant-lsmod’s output
+is sorted.
+
+Minor build system improvement: don’t use -D_FORTIFY_SOURCE, which can cause
+problems on Windows, and should be configured by the compiler vendor if
+desired.
+
+
+2.2.10 (September 1, 2020)
+--------------------------
+
+Fix Hunspell backend to treat apostrophes as Hunspell does: if either
+straight or curly apostrophe is a word character, allow both.
+
+
+2.2.9 (July 29, 2020)
+---------------------
+
+Fix a couple of space leaks in the Nuspell back end (thanks, ASAN).
+
+
 2.2.8 (February 27, 2020)
 -------------------------
 
