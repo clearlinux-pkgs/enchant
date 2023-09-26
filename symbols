@@ -6,6 +6,7 @@ libenchant-2.so.2:enchant_broker_get_error
 libenchant-2.so.2:enchant_broker_init
 libenchant-2.so.2:enchant_broker_list_dicts
 libenchant-2.so.2:enchant_broker_request_dict
+libenchant-2.so.2:enchant_broker_request_dict_with_pwl
 libenchant-2.so.2:enchant_broker_request_pwl_dict
 libenchant-2.so.2:enchant_broker_set_ordering
 libenchant-2.so.2:enchant_dict_add
@@ -35,6 +36,5 @@ libenchant-2.so.2:enchant_pwl_free
 libenchant-2.so.2:enchant_pwl_init
 libenchant-2.so.2:enchant_pwl_init_with_file
 libenchant-2.so.2:enchant_pwl_remove
-libenchant-2.so.2:enchant_pwl_suggest
 libenchant-2.so.2:enchant_relocate
 libenchant-2.so.2:enchant_set_prefix_dir
