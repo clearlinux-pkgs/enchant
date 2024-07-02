@@ -26,14 +26,10 @@ Configure miss: whether g++ accepts -g
 Configure miss: whether g++ accepts -g
 Configure miss: whether the compiler is clang
 Configure miss: whether the compiler is clang
-Configure miss: whether the compiler produces multi-arch binaries
-Configure miss: whether the compiler produces multi-arch binaries
 Configure miss: whether the compiler supports GNU Objective C++
 Configure miss: whether the compiler supports GNU Objective C++
 Configure miss: whether to activate relocatable installation
 Configure miss: whether to activate relocatable installation
-Configure miss: windres
-Configure miss: windres
 Configure miss: x86_64-generic-linux-gnu-CXX
 Configure miss: x86_64-generic-linux-gnu-CXX
 Configure miss: x86_64-generic-linux-gnu-file
